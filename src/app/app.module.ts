@@ -13,7 +13,7 @@ import {PresetValueExampleComponent} from "./home/preset-value-example/presetVal
 import {StateToggleExampleComponent} from "./home/state-toggle-example/stateToggleExample.component";
 import {AsyncValueOptionsComponent} from "./home/async-value-options-example/asyncValueOptions.component";
 
-import {Ng2SelectizeModule} from 'ng2-selectize';
+import {NgSelectizeModule} from 'ng-selectize';
 
 @NgModule({
 	declarations: [
@@ -33,10 +33,10 @@ import {Ng2SelectizeModule} from 'ng2-selectize';
 		ReactiveFormsModule,
 		HttpModule,
 		RouterModule.forRoot([
-			{path: 'wip', component: AsyncValueOptionsComponent}, // just for tracing into Ng2Selectize, i want it to be the only thing on the page.
+			{path: 'wip', component: AsyncValueOptionsComponent}, // just for tracing into NgSelectize, i want it to be the only thing on the page.
 			{path: '', component: HomeComponent}
 		]),
-		Ng2SelectizeModule // Import the ng2-selectize module.
+		NgSelectizeModule // Import the ng-selectize module.
 	],
 	bootstrap: [AppComponent]
 })

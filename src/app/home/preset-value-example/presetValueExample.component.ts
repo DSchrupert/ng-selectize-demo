@@ -14,7 +14,7 @@ export class PresetValueExampleComponent implements OnInit {
 
 	multiSelectConfig:any = MULTI_SELECT_PRESET_VALUE_CONFIG;
 	multiSelectOptions:any = ExampleValues_Frameworks.slice(0);
-	multiSelectValue:string[] = ['reactjs', 'angular2'];
+	multiSelectValue:string[] = ['reactjs', 'angular'];
 
 	placeholder:string = 'Click to select...';
 

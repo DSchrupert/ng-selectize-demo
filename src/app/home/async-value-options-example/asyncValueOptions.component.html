@@ -2,7 +2,7 @@
 	<h3>Async Example:</h3>
 
 	<label>Dropdown:</label>
-	<ng2-selectize [options]="asyncOptions" [(ngModel)]="currentValue" [config]="asyncOptionsConfig"></ng2-selectize>
+	<ng-selectize [options]="asyncOptions" [(ngModel)]="currentValue" [config]="asyncOptionsConfig"></ng-selectize>
 	<pre>Current value: {{currentValue | json}}</pre>
 
 	<div class="ui grid">
@@ -22,7 +22,7 @@
 		</div>
 		<div class="four wide column">
 			<label>Value to set:</label>
-			<ng2-selectize [options]="asyncValueOptions" [(ngModel)]="asyncValueValue" [config]="asyncValueConfig"></ng2-selectize>
+			<ng-selectize [options]="asyncValueOptions" [(ngModel)]="asyncValueValue" [config]="asyncValueConfig"></ng-selectize>
 		</div>
 		<div class="sixteen wide column">
 			<button class="ui primary button" (click)="executeScenario()">Execute Scenario</button>

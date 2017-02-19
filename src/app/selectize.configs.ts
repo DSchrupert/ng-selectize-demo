@@ -26,9 +26,9 @@ export const SingleSelectConfig:any = Object.assign({}, DEFAULT_DROPDOWN_CONFIG,
 
 export const ExampleValues_Frameworks:ExampleSelectizeOption[] = <ExampleSelectizeOption[]>[
 	{
-		label: 'Angular 2',
-		value: 'angular2',
-		code: 'NG2'
+		label: 'Angular',
+		value: 'angular',
+		code: 'NG'
 	}, {
 		label: 'ReactJS',
 		value: 'reactjs',

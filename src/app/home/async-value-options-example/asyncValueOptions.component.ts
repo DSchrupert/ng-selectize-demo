@@ -14,7 +14,7 @@ export class AsyncValueOptionsComponent implements OnInit {
 
 	asyncValueConfig = ASYNC_DROPDOWN_CONFIG;
 	asyncValueOptions = ExampleValues_Frameworks.slice(0);
-	asyncValueValue = ['angular2'];
+	asyncValueValue = ['angular'];
 
 	valueTimeout:number = DEFAULT_VALUE_TIMEOUT;
 	optionsTimeout:number = DEFAULT_OPTIONS_TIMEOUT;

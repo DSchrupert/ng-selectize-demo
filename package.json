@@ -1,5 +1,5 @@
 {
-  "name": "ng2-selectize-demo",
+  "name": "ng-selectize-demo",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -22,7 +22,7 @@
     "@angular/router": "^3.4.0",
     "core-js": "^2.4.1",
     "jquery": "^3.1.1",
-    "ng2-selectize": "^1.0.1",
+    "ng-selectize": "^1.0.2",
     "rxjs": "^5.1.0",
     "selectize": "^0.12.4",
     "semantic-ui-css": "^2.2.7",

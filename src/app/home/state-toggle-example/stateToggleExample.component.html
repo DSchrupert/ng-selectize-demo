@@ -1,8 +1,8 @@
 <div class="example">
 	<h3>Dynamically update enabled/disabled state:</h3>
 
-	<ng2-selectize [config]="config" [options]="options" [enabled]="isEnabled" [(ngModel)]="value"
-				   ngDefaultControl></ng2-selectize>
+	<ng-selectize [config]="config" [options]="options" [enabled]="isEnabled" [(ngModel)]="value"
+				   ngDefaultControl></ng-selectize>
 	<div>
 		<button class="ui primary button" (click)="toggleEnabledState()">Toggle Enabled State</button>
 		<span>Is Enabled: <strong>{{isEnabled}}</strong></span>

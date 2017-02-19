@@ -3020,9 +3020,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-ng2-selectize@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ng2-selectize/-/ng2-selectize-1.0.1.tgz#612217c3ad14a75295f8729adc2288d7f8c94ffc"
+ng-selectize@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ng-selectize/-/ng-selectize-1.0.2.tgz#d161196e3276a6962b77ae6bd04035540dd05f37"
   dependencies:
     lodash.clonedeep "^4.5.0"
     lodash.differencewith "^4.5.0"
