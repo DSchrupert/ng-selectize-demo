@@ -69,7 +69,7 @@
     webpack-merge "^2.4.0"
     zone.js "^0.7.2"
 
-"@angular/common@^2.3.1", "@angular/common@^2.4.0":
+"@angular/common@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-2.4.7.tgz#9316daf90e353e67187d2e0afec5521c2001bd4b"
 
@@ -81,31 +81,31 @@
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@>=2.3.1 <5.0.0", "@angular/compiler@^2.3.1", "@angular/compiler@^2.4.0":
+"@angular/compiler@>=2.3.1 <5.0.0", "@angular/compiler@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-2.4.7.tgz#008c1f0d1409c46fbba215fe8ab0d886252c7ff0"
 
-"@angular/core@>=2.3.1 <5.0.0", "@angular/core@^2.3.1", "@angular/core@^2.4.0":
+"@angular/core@>=2.3.1 <5.0.0", "@angular/core@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-2.4.7.tgz#8bed9a2d37e81342bd41d189df88aa3e02393cfb"
 
-"@angular/forms@^2.3.1", "@angular/forms@^2.4.0":
+"@angular/forms@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-2.4.7.tgz#d34a36110e10f641aa1e1420b5c2df65987fd8bb"
 
-"@angular/http@^2.3.1", "@angular/http@^2.4.0":
+"@angular/http@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-2.4.7.tgz#b024b2b49ae0234258d42309e46f65862a42070d"
 
-"@angular/platform-browser-dynamic@^2.3.1", "@angular/platform-browser-dynamic@^2.4.0":
+"@angular/platform-browser-dynamic@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-2.4.7.tgz#9632586f9ce596186be4c124c3ea0a4a74b27b46"
 
-"@angular/platform-browser@^2.3.1", "@angular/platform-browser@^2.4.0":
+"@angular/platform-browser@^2.4.0":
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-2.4.7.tgz#19f7996a70f07b34ce8d6d0e255544e62cae75f1"
 
-"@angular/router@^3.3.1", "@angular/router@^3.4.0":
+"@angular/router@^3.4.0":
   version "3.4.7"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-3.4.7.tgz#e9583eed5a1d50cc1628b2526244555444a746b8"
 
@@ -132,20 +132,6 @@
   version "2.5.38"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.38.tgz#a4379124c4921d4e21de54ec74669c9e9b356717"
 
-"@types/jquery@*":
-  version "2.0.40"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.40.tgz#acdd69e29b74cdec15dc3c074bcb064bc1b87213"
-
-"@types/lodash-es@^4.14.4":
-  version "4.14.4"
-  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.14.4.tgz#b874a1c39dd59b28089ac05f13ab8df73a21b23b"
-  dependencies:
-    "@types/lodash" "*"
-
-"@types/lodash@*":
-  version "4.14.52"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.52.tgz#de5c7ab14da1289733233c9b0ec6f9e377db90f5"
-
 "@types/node@^6.0.46", "@types/node@~6.0.60":
   version "6.0.63"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.63.tgz#e08acbbd5946e0e95990b1c76f3ce5b7882a48eb"
@@ -153,12 +139,6 @@
 "@types/q@^0.0.32":
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-0.0.32.tgz#bd284e57c84f1325da702babfc82a5328190c0c5"
-
-"@types/selectize@^0.12.28":
-  version "0.12.28"
-  resolved "https://registry.yarnpkg.com/@types/selectize/-/selectize-0.12.28.tgz#8b29c3a255674c803644d46fa8004daf3d9f257d"
-  dependencies:
-    "@types/jquery" "*"
 
 "@types/selenium-webdriver@^2.53.35", "@types/selenium-webdriver@~2.53.39":
   version "2.53.39"
@@ -2767,10 +2747,6 @@ loader-utils@0.2.x, loader-utils@^0.2.15, loader-utils@^0.2.16, loader-utils@^0.
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-lodash-es@^4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
-
 lodash.assign@^4.0.3, lodash.assign@^4.0.6, lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
@@ -2779,9 +2755,25 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
 
-lodash.clonedeep@^4.3.2:
+lodash.clonedeep@^4.3.2, lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+
+lodash.differencewith@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.differencewith/-/lodash.differencewith-4.5.0.tgz#bafafbc918b55154e179176a00bb0aefaac854b7"
+
+lodash.find@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.find/-/lodash.find-4.6.0.tgz#cb0704d47ab71789ffa0de8b97dd926fb88b13b1"
+
+lodash.intersectionwith@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.intersectionwith/-/lodash.intersectionwith-4.4.0.tgz#818949e293052ba7fc73a440f6114c2c81c38e1c"
+
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
 lodash.memoize@^4.1.0:
   version "4.1.2"
@@ -3028,25 +3020,14 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-ng2-selectize@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/ng2-selectize/-/ng2-selectize-0.1.0.tgz#e29304f63ff168df7b61485fc7c7dca3c7c5df0c"
+ng2-selectize@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ng2-selectize/-/ng2-selectize-1.0.1.tgz#612217c3ad14a75295f8729adc2288d7f8c94ffc"
   dependencies:
-    "@angular/common" "^2.3.1"
-    "@angular/compiler" "^2.3.1"
-    "@angular/core" "^2.3.1"
-    "@angular/forms" "^2.3.1"
-    "@angular/http" "^2.3.1"
-    "@angular/platform-browser" "^2.3.1"
-    "@angular/platform-browser-dynamic" "^2.3.1"
-    "@angular/router" "^3.3.1"
-    "@types/selectize" "^0.12.28"
-    core-js "^2.4.1"
-    jquery "^3.1.1"
-    lodash-es "^4.17.4"
-    rxjs "^5.0.1"
-    ts-helpers "^1.1.1"
-    zone.js "^0.7.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.differencewith "^4.5.0"
+    lodash.find "^4.6.0"
+    lodash.isequal "^4.5.0"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -4670,10 +4651,6 @@ trim-newlines@^1.0.0:
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
-
-ts-helpers@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/ts-helpers/-/ts-helpers-1.1.2.tgz#fc69be9f1f3baed01fb1a0ef8d4cfe748814d835"
 
 ts-node@~2.0.0:
   version "2.0.0"

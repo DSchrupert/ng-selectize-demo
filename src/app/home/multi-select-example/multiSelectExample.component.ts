@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectorRef} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {MULTI_SELECT_CONFIG} from "./multiSelectExample.config";
 import {ExampleSelectizeOption} from "../../app.types";
 import {ExampleValues_Frameworks} from "../../selectize.configs";
@@ -10,7 +10,7 @@ import {ExampleValues_Frameworks} from "../../selectize.configs";
 export class MultiSelectExampleComponent implements OnInit {
 
 	options: ExampleSelectizeOption[] = ExampleValues_Frameworks.slice(0);
-	config: Selectize.IOptions<any, any> = MULTI_SELECT_CONFIG;
+	config: any = MULTI_SELECT_CONFIG;
 	placeholder: string = 'Placeholder...';
 	value:string[];
 

@@ -22,12 +22,12 @@
       "styles": [
         "styles.css",
         "../node_modules/selectize/dist/css/selectize.css",
-        "../node_modules/ng2-selectize/src/vendors/selectize/selectize.semantic.css"
+        "../node_modules/ng2-selectize/selectize/selectize.semantic.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/semantic-ui-css/semantic.min.js",
-        "../node_modules/ng2-selectize/src/vendors/selectize/selectize.standalone.js"
+        "../node_modules/ng2-selectize/selectize/selectize.standalone.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

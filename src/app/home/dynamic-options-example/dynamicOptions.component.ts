@@ -2,8 +2,8 @@ import {Component, OnInit} from "@angular/core";
 import {ExampleValues_Frameworks} from "../../selectize.configs";
 import {REMOVE_OPTIONS_CONFIG, CURRENT_OPTIONS_CONFIG, ADD_OPTIONS_CONFIG} from "./dynamicOptions.config";
 
-import differenceWith from 'lodash-es/differenceWith';
-import intersectionWith from 'lodash-es/intersectionWith';
+const differenceWith = require('lodash.differencewith');
+const intersectionWith = require('lodash.intersectionwith');
 
 @Component({
 	selector: 'dynamic-options-example',

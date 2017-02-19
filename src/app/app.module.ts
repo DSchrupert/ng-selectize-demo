@@ -6,13 +6,14 @@ import {AppComponent} from "./app.component";
 import {RouterModule} from "@angular/router";
 import {HomeComponent} from "./home/home.component";
 import {DynamicOptionsComponent} from "./home/dynamic-options-example/dynamicOptions.component";
-import {Ng2SelectizeComponent} from "./ng2-selectize.component";
 import {FormExampleComponent} from "./home/form-example/formExample.component";
 import {MultiSelectExampleComponent} from "./home/multi-select-example/multiSelectExample.component";
 import {PlaceholderStateExampleComponent} from "./home/placeholder-state-example/placeholderStateExample.component";
 import {PresetValueExampleComponent} from "./home/preset-value-example/presetValueExample.component";
 import {StateToggleExampleComponent} from "./home/state-toggle-example/stateToggleExample.component";
 import {AsyncValueOptionsComponent} from "./home/async-value-options-example/asyncValueOptions.component";
+
+import {Ng2SelectizeModule} from 'ng2-selectize';
 
 @NgModule({
 	declarations: [
@@ -24,8 +25,7 @@ import {AsyncValueOptionsComponent} from "./home/async-value-options-example/asy
 		PlaceholderStateExampleComponent,
 		PresetValueExampleComponent,
 		StateToggleExampleComponent,
-		AsyncValueOptionsComponent,
-		Ng2SelectizeComponent
+		AsyncValueOptionsComponent
 	],
 	imports: [
 		BrowserModule,
@@ -36,7 +36,7 @@ import {AsyncValueOptionsComponent} from "./home/async-value-options-example/asy
 			{path: 'wip', component: AsyncValueOptionsComponent}, // just for tracing into Ng2Selectize, i want it to be the only thing on the page.
 			{path: '', component: HomeComponent}
 		]),
-		// Ng2SelectizeModule // Import the ng2-selectize module.
+		Ng2SelectizeModule // Import the ng2-selectize module.
 	],
 	bootstrap: [AppComponent]
 })

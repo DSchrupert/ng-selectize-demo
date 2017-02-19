@@ -16,7 +16,7 @@ export const DEFAULT_DROPDOWN_CONFIG:any = {
 };
 
 
-export const SingleSelectConfig: Selectize.IOptions<any, any> = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
+export const SingleSelectConfig:any = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
 	labelField: 'label',
 	valueField: 'value',
 	plugins: ['remove_button'],
