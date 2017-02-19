@@ -1,0 +1,31 @@
+<div class="example">
+	<h3>Async Example:</h3>
+
+	<label>Dropdown:</label>
+	<ng2-selectize [options]="asyncOptions" [(ngModel)]="currentValue" [config]="asyncOptionsConfig"></ng2-selectize>
+	<pre>Current value: {{currentValue | json}}</pre>
+
+	<div class="ui grid">
+		<div class="six wide column">
+			<label>Value timeout:</label>
+			<div class="ui mini right labeled input">
+				<input type="number" placeholder="Enter time.." [(ngModel)]="valueTimeout">
+				<div class="ui basic label">seconds</div>
+			</div>
+		</div>
+		<div class="six wide column">
+			<label>Options timeout:</label>
+			<div class="ui mini right labeled input">
+				<input type="number" placeholder="Enter time.." [(ngModel)]="optionsTimeout">
+				<div class="ui basic label">seconds</div>
+			</div>
+		</div>
+		<div class="four wide column">
+			<label>Value to set:</label>
+			<ng2-selectize [options]="asyncValueOptions" [(ngModel)]="asyncValueValue" [config]="asyncValueConfig"></ng2-selectize>
+		</div>
+		<div class="sixteen wide column">
+			<button class="ui primary button" (click)="executeScenario()">Execute Scenario</button>
+		</div>
+	</div>
+</div>

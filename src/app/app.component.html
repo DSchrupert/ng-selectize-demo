@@ -1,0 +1,40 @@
+<div>
+	<div class="ui fixed inverted menu">
+		<div class="ui container">
+			<a href="#" class="header item">
+				<img class="logo" src="assets/avatar.jpg" style="margin-right: 15px;">
+				ng2-selectize
+			</a>
+			<a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" class="item">Home</a>
+			<!--<a routerLinkActive="active" routerLink="wip" class="item">WIP</a>-->
+		</div>
+	</div>
+
+	<div class="ui main text container" style="padding-top: 100px;">
+		<div style="text-align: center;">
+			<h1 class="ui header">Ng2-Selectize</h1>
+			<p>These are some basic examples highlighting the features available in <a href="https://github.com/NicholasAzar/ng2-selectize">ng2-selectize</a>.</p>
+			<p>Don't hesitate to open a <a href="https://github.com/NicholasAzar/ng2-selectize/pulls">pull request</a> for any changes you think should be added!</p>
+		</div>
+		<router-outlet></router-outlet>
+
+	</div>
+
+	<div class="ui inverted vertical footer segment">
+		<div class="ui center aligned container">
+			<h4 class="ui inverted horizontal divider header">
+				<i class="github icon" style="margin-right: 0;"></i>
+			</h4>
+			<div style="width:100%; text-align: center;">
+				<a href="https://github.com/NicholasAzar">
+					<img src="assets/avatar.jpg" style="width:35px; height: 35px;">
+				</a>
+			</div>
+			<div class="ui horizontal inverted small divided link list">
+				<a class="item" href="https://github.com/NicholasAzar/ng2-selectize">Repository</a>
+				<a class="item" href="https://github.com/NicholasAzar/ng2-selectize/issues">Issues</a>
+				<a class="item" href="https://github.com/NicholasAzar/ng2-selectize/pulls">Pull Requests</a>
+			</div>
+		</div>
+	</div>
+</div>
