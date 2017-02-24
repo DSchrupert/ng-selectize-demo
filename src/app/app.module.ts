@@ -14,6 +14,7 @@ import {StateToggleExampleComponent} from "./home/state-toggle-example/stateTogg
 import {AsyncValueOptionsComponent} from "./home/async-value-options-example/asyncValueOptions.component";
 
 import {NgSelectizeModule} from 'ng-selectize';
+import {CreateValuesExampleComponent} from "./home/create-values-example/create-values-example.component";
 
 @NgModule({
 	declarations: [
@@ -25,7 +26,8 @@ import {NgSelectizeModule} from 'ng-selectize';
 		PlaceholderStateExampleComponent,
 		PresetValueExampleComponent,
 		StateToggleExampleComponent,
-		AsyncValueOptionsComponent
+		AsyncValueOptionsComponent,
+		CreateValuesExampleComponent
 	],
 	imports: [
 		BrowserModule,
