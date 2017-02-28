@@ -8,7 +8,8 @@
     "start": "ng serve",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:for:docs": "ng build --prod --aot --base-href=/ng-selectize/"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,7 @@
     "@angular/router": "^3.4.0",
     "core-js": "^2.4.1",
     "jquery": "^3.1.1",
-    "ng-selectize": "^1.0.2",
+    "ng-selectize": "^1.0.6",
     "rxjs": "^5.1.0",
     "selectize": "^0.12.4",
     "semantic-ui-css": "^2.2.7",
