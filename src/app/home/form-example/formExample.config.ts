@@ -6,7 +6,7 @@ export const startWithR = (control: AbstractControl):any => {
 };
 
 export const FORM_GROUP_EXAMPLE = {
-	requiredDropdownExample: ['', Validators.compose([Validators.required, startWithR])],
+	requiredDropdownExample: ['angular', Validators.compose([Validators.required, startWithR])],
 	firstName: ['', Validators.required],
 	lastName: ['', Validators.required]
 };

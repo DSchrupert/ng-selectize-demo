@@ -24,4 +24,10 @@ export class FormExampleComponent implements OnInit {
 		console.log(this.formGroupExample.controls['requiredDropdownExample'].hasError('doesntStartWithR'))
 		return true;
 	}
+
+	resetForm() {
+		this.formGroupExample.get('requiredDropdownExample').reset('');
+		this.formGroupExample.get('firstName').reset('');
+		this.formGroupExample.get('lastName').reset('');
+	}
 }
