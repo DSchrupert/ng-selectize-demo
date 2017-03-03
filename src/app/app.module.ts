@@ -15,6 +15,7 @@ import {AsyncValueOptionsComponent} from "./home/async-value-options-example/asy
 
 import {NgSelectizeModule} from 'ng-selectize';
 import {CreateValuesExampleComponent} from "./home/create-values-example/create-values-example.component";
+import {TestComponentComponent, SportService} from "./home/test-component/test-component.component";
 
 @NgModule({
 	declarations: [
@@ -27,7 +28,8 @@ import {CreateValuesExampleComponent} from "./home/create-values-example/create-
 		PresetValueExampleComponent,
 		StateToggleExampleComponent,
 		AsyncValueOptionsComponent,
-		CreateValuesExampleComponent
+		CreateValuesExampleComponent,
+		TestComponentComponent
 	],
 	imports: [
 		BrowserModule,
@@ -40,7 +42,8 @@ import {CreateValuesExampleComponent} from "./home/create-values-example/create-
 		]),
 		NgSelectizeModule // Import the ng-selectize module.
 	],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent],
+	providers: [SportService]
 })
 export class AppModule {}
 
