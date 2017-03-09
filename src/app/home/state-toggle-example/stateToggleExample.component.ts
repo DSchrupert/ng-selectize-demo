@@ -8,7 +8,7 @@ import {ExampleValues_Frameworks} from "../../selectize.configs";
 })
 export class StateToggleExampleComponent implements OnInit {
 
-	isEnabled:boolean = true;
+	isEnabled:boolean = false;
 	config:any = STATE_TOGGLE_EXAMPLE_CONFIG;
 	options: any = ExampleValues_Frameworks.slice(0);
 	value: string;
