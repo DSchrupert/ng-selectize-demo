@@ -21,8 +21,12 @@ export class FormExampleComponent implements OnInit {
 	}
 
 	hasStartsWithRError():boolean {
-		console.log(this.formGroupExample.controls['requiredDropdownExample'].hasError('doesntStartWithR'))
+		console.log(this.formGroupExample.controls['requiredDropdownExample'].hasError('doesntStartWithR'));
 		return true;
+	}
+
+	testSetValue():void {
+		this.formGroupExample.controls['requiredDropdownExample'].setValue(['angular', 'reactjs'])
 	}
 
 	resetForm() {

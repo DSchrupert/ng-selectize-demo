@@ -6,12 +6,13 @@ export const startWithR = (control: AbstractControl):any => {
 };
 
 export const FORM_GROUP_EXAMPLE = {
-	requiredDropdownExample: ['angular', Validators.compose([Validators.required, startWithR])],
+	requiredDropdownExample: ['angular', Validators.compose([Validators.required])],
 	firstName: ['', Validators.required],
 	lastName: ['', Validators.required]
 };
 
 export const REQUIRED_DROPDOWN_CONFIG = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
 	labelField: 'label',
-	valueField: 'value'
+	valueField: 'value',
+	maxItems: 2
 });
