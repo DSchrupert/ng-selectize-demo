@@ -1,7 +1,7 @@
-import {Component, OnInit} from "@angular/core";
-import {FormGroup, FormBuilder} from "@angular/forms";
-import {FORM_GROUP_EXAMPLE, REQUIRED_DROPDOWN_CONFIG} from "./formExample.config";
-import {ExampleValues_Frameworks} from "../../selectize.configs";
+import {Component, OnInit} from '@angular/core';
+import {FormGroup, FormBuilder} from '@angular/forms';
+import {FORM_GROUP_EXAMPLE, REQUIRED_DROPDOWN_CONFIG} from './formExample.config';
+import {ExampleValues_Frameworks} from '../../selectize.configs';
 
 @Component({
 	selector: 'form-example',
@@ -13,16 +13,21 @@ export class FormExampleComponent implements OnInit {
 	requiredDropdownOptions: any = ExampleValues_Frameworks.slice(0);
 	formGroupExample: FormGroup;
 
-	constructor(private formBuilder: FormBuilder) {}
+	constructor(private formBuilder: FormBuilder) {
+	}
 
 	ngOnInit(): void {
 		this.formGroupExample = this.formBuilder.group(FORM_GROUP_EXAMPLE);
 		console.log(this.formGroupExample.controls['requiredDropdownExample'])
 	}
 
-	hasStartsWithRError():boolean {
-		console.log(this.formGroupExample.controls['requiredDropdownExample'].hasError('doesntStartWithR'))
+	hasStartsWithRError(): boolean {
+		console.log(this.formGroupExample.controls['requiredDropdownExample'].hasError('doesntStartWithR'));
 		return true;
+	}
+
+	testSetValue(): void {
+		this.formGroupExample.controls['requiredDropdownExample'].setValue(['angular', 'reactjs'])
 	}
 
 	resetForm() {

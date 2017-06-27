@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ExampleSelectizeOption} from "../../app.types";
-import {PLACEHOLDER_STATE_CONFIG} from "./placeholderStateExample.config";
+import {ExampleSelectizeOption} from '../../app.types';
+import {PLACEHOLDER_STATE_CONFIG} from './placeholderStateExample.config';
 
 @Component({
 	selector: 'placeholder-state-example',
@@ -8,15 +8,17 @@ import {PLACEHOLDER_STATE_CONFIG} from "./placeholderStateExample.config";
 })
 export class PlaceholderStateExampleComponent implements OnInit {
 
-	config:any = PLACEHOLDER_STATE_CONFIG;
-	options:any = [];
+	config: any = PLACEHOLDER_STATE_CONFIG;
+	options: any = [];
 
-	hasOptionsPlaceholder:string = 'Click to select...';
-	noOptionsPlaceholder:string = 'No options available.';
+	hasOptionsPlaceholder = 'Click to select...';
+	noOptionsPlaceholder = 'No options available.';
 
-	constructor() {}
+	constructor() {
+	}
 
-	ngOnInit() {}
+	ngOnInit() {
+	}
 
 	addRandomOption() {
 		this.options.push(<ExampleSelectizeOption>{

@@ -1,4 +1,4 @@
-import {DEFAULT_DROPDOWN_CONFIG} from "../../selectize.configs";
+import {DEFAULT_DROPDOWN_CONFIG} from '../../selectize.configs';
 
 export const SINGLE_SELECT_PRESET_VALUE_CONFIG = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
 	labelField: 'label',

@@ -1,11 +1,16 @@
-import {Component} from '@angular/core';
+import {Component, DoCheck, OnChanges} from '@angular/core';
 
 @Component({
 	selector: '[app-root]',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-	title = 'Angular 2 Selectize Examples';
+export class AppComponent implements OnChanges, DoCheck {
+	ngOnChanges() {
+		console.log('onChanges');
+	}
 
+	ngDoCheck() {
+		console.log('doCheck');
+	}
 }

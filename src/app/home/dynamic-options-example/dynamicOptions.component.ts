@@ -1,9 +1,8 @@
-import {Component, OnInit} from "@angular/core";
-import {ExampleValues_Frameworks} from "../../selectize.configs";
-import {REMOVE_OPTIONS_CONFIG, CURRENT_OPTIONS_CONFIG, ADD_OPTIONS_CONFIG} from "./dynamicOptions.config";
+import {Component, OnInit} from '@angular/core';
+import {ExampleValues_Frameworks} from '../../selectize.configs';
+import {REMOVE_OPTIONS_CONFIG, CURRENT_OPTIONS_CONFIG, ADD_OPTIONS_CONFIG} from './dynamicOptions.config';
 
-const differenceWith = require('lodash.differencewith');
-const intersectionWith = require('lodash.intersectionwith');
+import {differenceWith, intersectionWith} from 'lodash'
 
 @Component({
 	selector: 'dynamic-options-example',
@@ -11,26 +10,27 @@ const intersectionWith = require('lodash.intersectionwith');
 })
 export class DynamicOptionsComponent implements OnInit {
 
-	currentOptions:any;
+	currentOptions: any;
 	currentOptionsConfig = CURRENT_OPTIONS_CONFIG;
-	value:string[];
+	value: string[];
 
-	removeOptions:any = this.currentOptions;
+	removeOptions: any = this.currentOptions;
 	removeOptionsConfig = REMOVE_OPTIONS_CONFIG;
-	removeOptionsValue:string[];
+	removeOptionsValue: string[];
 
-	addOptions:any = [];
+	addOptions: any = [];
 	addOptionsConfig = ADD_OPTIONS_CONFIG;
-	addOptionsValue:string[];
+	addOptionsValue: string[];
 
-	constructor() {}
+	constructor() {
+	}
 
 	ngOnInit(): void {
 		this.currentOptions = ExampleValues_Frameworks.slice(0);
 	}
 
 	removeSelectedOption() {
-		this.currentOptions = differenceWith(this.currentOptions, this.removeOptionsValue, (oldValue:any, selectedValue:any) => {
+		this.currentOptions = differenceWith(this.currentOptions, this.removeOptionsValue, (oldValue: any, selectedValue: any) => {
 			return oldValue[this.currentOptionsConfig.valueField] === selectedValue;
 		});
 		this.refreshRemoveAndAddOptions();
@@ -38,11 +38,11 @@ export class DynamicOptionsComponent implements OnInit {
 
 	addSelectedOptions() {
 		if (this.addOptionsValue && this.addOptionsValue.length > 0) {
-			let optionsToAdd = intersectionWith(this.addOptions, this.addOptionsValue, (option:any, value:any) => {
+			const optionsToAdd = intersectionWith(this.addOptions, this.addOptionsValue, (option: any, value: any) => {
 				return option[this.addOptionsConfig.valueField] === value;
 			});
 			if (optionsToAdd && optionsToAdd.length > 0) {
-				optionsToAdd.forEach((option:any) => {
+				optionsToAdd.forEach((option: any) => {
 					this.currentOptions.push(option);
 				});
 			}
@@ -53,7 +53,7 @@ export class DynamicOptionsComponent implements OnInit {
 	refreshRemoveAndAddOptions() {
 		this.removeOptions = this.currentOptions;
 
-		this.addOptions = differenceWith(ExampleValues_Frameworks, this.removeOptions, (allValue:any, removedValue:any) => {
+		this.addOptions = differenceWith(ExampleValues_Frameworks, this.removeOptions, (allValue: any, removedValue: any) => {
 			return allValue[this.currentOptionsConfig.valueField] === removedValue[this.removeOptionsConfig.valueField];
 		});
 	}

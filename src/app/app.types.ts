@@ -4,7 +4,7 @@ export interface ExampleSelectizeOption {
 	code: string;
 }
 
-export interface ExampleGroupableOption extends ExampleSelectizeOption{
+export interface ExampleGroupableOption extends ExampleSelectizeOption {
 	group: any;
 }
 

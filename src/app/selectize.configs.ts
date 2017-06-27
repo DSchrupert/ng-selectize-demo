@@ -1,22 +1,22 @@
-import {ExampleSelectizeOption, ExampleGroupableOption, ExampleGroup} from "./app.types";
+import {ExampleSelectizeOption, ExampleGroupableOption, ExampleGroup} from './app.types';
 /**
  * Created by nicho on 12/17/2016.
  */
 
-export const Example_Placeholder:string = 'Placeholder...';
-export const Example_Placeholder_HasOptions:string = 'Click to select options';
-export const Example_Placeholder_NoOptions:string = 'No options available...';
+export const Example_Placeholder = 'Placeholder...';
+export const Example_Placeholder_HasOptions = 'Click to select options';
+export const Example_Placeholder_NoOptions = 'No options available...';
 
-export const DEFAULT_DROPDOWN_CONFIG:any = {
+export const DEFAULT_DROPDOWN_CONFIG: any = {
 	highlight: false,
-	create:false,
-	persist:true,
+	create: false,
+	persist: true,
 	plugins: ['dropdown_direction', 'remove_button'],
 	dropdownDirection: 'down'
 };
 
 
-export const SingleSelectConfig:any = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
+export const SingleSelectConfig: any = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
 	labelField: 'label',
 	valueField: 'value',
 	plugins: ['remove_button'],
@@ -24,7 +24,7 @@ export const SingleSelectConfig:any = Object.assign({}, DEFAULT_DROPDOWN_CONFIG,
 });
 
 
-export const ExampleValues_Frameworks:ExampleSelectizeOption[] = <ExampleSelectizeOption[]>[
+export const ExampleValues_Frameworks: ExampleSelectizeOption[] = <ExampleSelectizeOption[]>[
 	{
 		label: 'Angular',
 		value: 'angular',
@@ -44,7 +44,7 @@ export const ExampleValues_Frameworks:ExampleSelectizeOption[] = <ExampleSelecti
 	}
 ];
 
-export const ExampleValues_Lanugages:ExampleSelectizeOption[] = <ExampleSelectizeOption[]> [
+export const ExampleValues_Lanugages: ExampleSelectizeOption[] = <ExampleSelectizeOption[]> [
 	{
 		label: 'JavaScript',
 		value: 'javascript',
@@ -68,7 +68,7 @@ export const ExampleValues_Lanugages:ExampleSelectizeOption[] = <ExampleSelectiz
 	}
 ];
 
-export const ExampleValues_Colors:ExampleGroupableOption[] = <ExampleGroupableOption[]> [
+export const ExampleValues_Colors: ExampleGroupableOption[] = <ExampleGroupableOption[]> [
 	{
 		label: 'Red',
 		value: 'red',
@@ -88,7 +88,7 @@ export const ExampleValues_Colors:ExampleGroupableOption[] = <ExampleGroupableOp
 	}
 ];
 
-export const ExampleGroups_Colors:ExampleGroup[] = <ExampleGroup[]> [
+export const ExampleGroups_Colors: ExampleGroup[] = <ExampleGroup[]> [
 	{
 		id: 'colors',
 		data: 'The colors'

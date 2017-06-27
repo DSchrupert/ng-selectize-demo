@@ -1,6 +1,6 @@
-import {Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef} from '@angular/core';
+import {Component, OnInit, ChangeDetectorRef} from '@angular/core';
 import {ASYNC_DROPDOWN_CONFIG, DEFAULT_VALUE_TIMEOUT, DEFAULT_OPTIONS_TIMEOUT} from './asyncValueOptions.config';
-import {ExampleValues_Frameworks} from "../../selectize.configs";
+import {ExampleValues_Frameworks} from '../../selectize.configs';
 
 @Component({
 	selector: 'async-value-options-example',
@@ -9,17 +9,18 @@ import {ExampleValues_Frameworks} from "../../selectize.configs";
 export class AsyncValueOptionsComponent implements OnInit {
 
 	asyncOptionsConfig = ASYNC_DROPDOWN_CONFIG;
-	asyncOptions:any[];
-	currentValue:string[];
+	asyncOptions: any[];
+	currentValue: string[];
 
 	asyncValueConfig = ASYNC_DROPDOWN_CONFIG;
 	asyncValueOptions = ExampleValues_Frameworks.slice(0);
 	asyncValueValue = ['angular'];
 
-	valueTimeout:number = DEFAULT_VALUE_TIMEOUT;
-	optionsTimeout:number = DEFAULT_OPTIONS_TIMEOUT;
+	valueTimeout: number = DEFAULT_VALUE_TIMEOUT;
+	optionsTimeout: number = DEFAULT_OPTIONS_TIMEOUT;
 
-	constructor(private cdr:ChangeDetectorRef) {}
+	constructor(private cdr: ChangeDetectorRef) {
+	}
 
 	ngOnInit() {
 		this.setValue();

@@ -1,7 +1,7 @@
-import {Component, OnInit} from "@angular/core";
-import {MULTI_SELECT_CONFIG} from "./multiSelectExample.config";
-import {ExampleSelectizeOption} from "../../app.types";
-import {ExampleValues_Frameworks} from "../../selectize.configs";
+import {Component, OnInit} from '@angular/core';
+import {MULTI_SELECT_CONFIG} from './multiSelectExample.config';
+import {ExampleSelectizeOption} from '../../app.types';
+import {ExampleValues_Frameworks} from '../../selectize.configs';
 
 @Component({
 	selector: 'multi-select-example',
@@ -11,12 +11,14 @@ export class MultiSelectExampleComponent implements OnInit {
 
 	options: ExampleSelectizeOption[] = ExampleValues_Frameworks.slice(0);
 	config: any = MULTI_SELECT_CONFIG;
-	placeholder: string = 'Placeholder...';
-	value:string[];
+	placeholder = 'Placeholder...';
+	value: string[];
 
-	constructor() {}
+	constructor() {
+	}
 
-	ngOnInit(): void {}
+	ngOnInit(): void {
+	}
 
 	addRandomOption() {
 		const randomValue = Math.random().toString();
@@ -27,7 +29,7 @@ export class MultiSelectExampleComponent implements OnInit {
 		});
 	}
 
-	onValueChange($event:any) {
-		console.log("Multi select option changed: ", $event);
+	onValueChange($event: any) {
+		console.log('Multi select option changed: ', $event);
 	}
 }

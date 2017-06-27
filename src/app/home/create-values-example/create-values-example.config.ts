@@ -1,4 +1,4 @@
-import {DEFAULT_DROPDOWN_CONFIG} from "../../selectize.configs";
+import {DEFAULT_DROPDOWN_CONFIG} from '../../selectize.configs';
 
 
 export const CURRENT_OPTIONS_CONFIG = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
