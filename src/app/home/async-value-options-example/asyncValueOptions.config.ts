@@ -3,6 +3,7 @@ import {DEFAULT_DROPDOWN_CONFIG} from '../../selectize.configs';
 export const ASYNC_DROPDOWN_CONFIG = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
 	labelField: 'label',
 	valueField: 'value',
+	searchField: ['label', 'value'],
 	maxItems: 10
 });
 

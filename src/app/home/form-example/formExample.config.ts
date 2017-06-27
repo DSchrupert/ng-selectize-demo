@@ -14,5 +14,6 @@ export const FORM_GROUP_EXAMPLE = {
 export const REQUIRED_DROPDOWN_CONFIG = Object.assign({}, DEFAULT_DROPDOWN_CONFIG, {
 	labelField: 'label',
 	valueField: 'value',
+	searchField: ['label', 'value'],
 	maxItems: 2
 });

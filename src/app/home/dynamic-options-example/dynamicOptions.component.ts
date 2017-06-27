@@ -27,6 +27,7 @@ export class DynamicOptionsComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.currentOptions = ExampleValues_Frameworks.slice(0);
+		this.refreshRemoveAndAddOptions();
 	}
 
 	removeSelectedOption() {
