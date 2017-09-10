@@ -1,38 +1,23 @@
 import {Component, OnInit} from '@angular/core';
-import {MULTI_SELECT_CONFIG} from './optionGroupExample.config';
-import {ExampleSelectizeOption} from '../../app.types';
-import {ExampleValues_Frameworks} from '../../selectize.configs';
+import {OPTION_GROUP_SELECT_CONFIG} from './optionGroupExample.config';
+import {ExampleGroup, ExampleGroupableOption} from '../../app.types';
+import {ExampleGroups_Colors, ExampleValues_Colors} from '../../selectize.configs';
 
 @Component({
-	selector: 'multi-select-example',
+	selector: 'option-group-select-example',
 	templateUrl: './optionGroupExample.component.html'
 })
-export class MultiSelectExampleComponent implements OnInit {
+export class OptionGroupExampleComponent implements OnInit {
 
-	options: ExampleSelectizeOption[] = ExampleValues_Frameworks.slice(0);
-	config: any = MULTI_SELECT_CONFIG;
+	options: ExampleGroupableOption[] = ExampleValues_Colors.slice(0);
+	optgroups: ExampleGroup[] = ExampleGroups_Colors.slice(0);
+	config: any = OPTION_GROUP_SELECT_CONFIG;
 	placeholder = 'Placeholder...';
-	value: string[];
+	value: string[] = [];
 
 	constructor() {
 	}
 
 	ngOnInit(): void {
-		// for (let i = 0; i < 10; i++) {
-		// 	this.addRandomOption();
-		// }
-	}
-
-	addRandomOption() {
-		const randomValue = Math.random().toString();
-		this.options.push(<ExampleSelectizeOption>{
-			label: randomValue,
-			value: randomValue,
-			code: randomValue
-		});
-	}
-
-	onValueChange($event: any) {
-		console.log('Multi select option changed: ', $event);
 	}
 }

@@ -9,6 +9,6 @@ export interface ExampleGroupableOption extends ExampleSelectizeOption {
 }
 
 export interface ExampleGroup {
-	id: string;
-	data: any;
+	group: string;
+	label: any;
 }

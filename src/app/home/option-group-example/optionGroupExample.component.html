@@ -1,14 +1,10 @@
 <div class="example">
-	<h3>Dynamically add options to Multi select: </h3>
+	<h3>Option Groups: </h3>
 
-	<ng-selectize [config]="config" [options]="options" [placeholder]="placeholder" [(ngModel)]="value"
+	<ng-selectize [config]="config" [optgroups]="optgroups" [options]="options" [placeholder]="placeholder" [(ngModel)]="value"
 				   (ngModelChange)="onValueChange($event)" ngDefaultControl></ng-selectize>
 	<div class="form-inline">
 		<!--<add-option (addedOption)="addMultiSelectDynamicAddOption($event)" [fieldId]="'addMultiSelectDynamicOption'"></add-option>-->
-		<button class="ui primary button" (click)="addRandomOption()">Add Option</button>
-		<div class="ui input">
-			<input type="text" [(ngModel)]="placeholder"/>
-		</div>
 		<pre>Current value: {{value | json}}</pre>
 	</div>
 </div>

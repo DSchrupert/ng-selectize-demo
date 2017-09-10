@@ -16,6 +16,7 @@ import {AsyncValueOptionsComponent} from './home/async-value-options-example/asy
 import {NgSelectizeModule} from './ng-selectize/ng-selectize.module';
 // import {NgSelectizeModule} from 'ng-selectize';
 import {CreateValuesExampleComponent} from './home/create-values-example/create-values-example.component';
+import {OptionGroupExampleComponent} from './home/option-group-example/optionGroupExample.component';
 
 @NgModule({
 	declarations: [
@@ -28,7 +29,8 @@ import {CreateValuesExampleComponent} from './home/create-values-example/create-
 		PresetValueExampleComponent,
 		StateToggleExampleComponent,
 		AsyncValueOptionsComponent,
-		CreateValuesExampleComponent
+		CreateValuesExampleComponent,
+		OptionGroupExampleComponent
 	],
 	imports: [
 		BrowserModule,
@@ -36,7 +38,7 @@ import {CreateValuesExampleComponent} from './home/create-values-example/create-
 		ReactiveFormsModule,
 		HttpModule,
 		RouterModule.forRoot([
-			{path: 'wip', component: AsyncValueOptionsComponent}, // just for tracing into NgSelectize, i want it to be the only thing on the page.
+			{path: 'wip', component: OptionGroupExampleComponent}, // just for tracing into NgSelectize, i want it to be the only thing on the page.
 			{path: '', component: HomeComponent}
 		]),
 		NgSelectizeModule // Import the ng-selectize module.
