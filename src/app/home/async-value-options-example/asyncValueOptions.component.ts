@@ -28,7 +28,7 @@ export class AsyncValueOptionsComponent implements OnInit {
 	}
 
 	setValue() {
-		this.currentValue = null;
+		this.currentValue = [];
 		console.log(`Setting currentValue in ${this.valueTimeout} second(s).`);
 		setTimeout(() => {
 			this.currentValue = this.asyncValueValue;
@@ -47,6 +47,10 @@ export class AsyncValueOptionsComponent implements OnInit {
 	executeScenario() {
 		this.setValue();
 		this.setOptions();
+	}
+
+	onValueChange(value): void {
+		console.log('current value: ' + this.currentValue);
 	}
 
 	setConfig() {

@@ -9,7 +9,7 @@ import {CURRENT_OPTIONS_CONFIG} from './create-values-example.config';
 export class CreateValuesExampleComponent implements OnInit {
 
 	config: any = CURRENT_OPTIONS_CONFIG;
-	value: any;
+	value: any = [];
 
 	constructor() {
 	}

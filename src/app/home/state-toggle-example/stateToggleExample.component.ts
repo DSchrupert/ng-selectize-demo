@@ -11,7 +11,7 @@ export class StateToggleExampleComponent implements OnInit {
 	isEnabled = true;
 	config: any = STATE_TOGGLE_EXAMPLE_CONFIG;
 	options: any = ExampleValues_Frameworks.slice(0);
-	value: string;
+	value = '';
 
 	constructor() {
 	}

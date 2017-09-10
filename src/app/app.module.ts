@@ -13,8 +13,8 @@ import {PresetValueExampleComponent} from './home/preset-value-example/presetVal
 import {StateToggleExampleComponent} from './home/state-toggle-example/stateToggleExample.component';
 import {AsyncValueOptionsComponent} from './home/async-value-options-example/asyncValueOptions.component';
 
-import {NgSelectizeModule} from './ng-selectize/ng-selectize.module';
-// import {NgSelectizeModule} from 'ng-selectize';
+// import {NgSelectizeModule} from './ng-selectize/ng-selectize.module';
+import {NgSelectizeModule} from 'ng-selectize';
 import {CreateValuesExampleComponent} from './home/create-values-example/create-values-example.component';
 import {OptionGroupExampleComponent} from './home/option-group-example/optionGroupExample.component';
 

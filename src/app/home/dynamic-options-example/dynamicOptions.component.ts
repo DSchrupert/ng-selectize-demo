@@ -12,7 +12,7 @@ export class DynamicOptionsComponent implements OnInit {
 
 	currentOptions: any;
 	currentOptionsConfig = CURRENT_OPTIONS_CONFIG;
-	value: string[];
+	value: string[] = [];
 
 	removeOptions: any = this.currentOptions;
 	removeOptionsConfig = REMOVE_OPTIONS_CONFIG;

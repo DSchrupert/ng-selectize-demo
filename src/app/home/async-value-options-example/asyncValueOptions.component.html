@@ -2,7 +2,7 @@
 	<h3>Async Example:</h3>
 
 	<label>Dropdown:</label>
-	<ng-selectize [options]="asyncOptions" [(ngModel)]="currentValue" [config]="asyncOptionsConfig"></ng-selectize>
+	<ng-selectize [options]="asyncOptions" [(ngModel)]="currentValue" (ngModelChange)="onValueChange($event)" [config]="asyncOptionsConfig"></ng-selectize>
 	<pre>Current value: {{currentValue | json}}</pre>
 
 	<div class="ui grid">

@@ -90,10 +90,10 @@ export const ExampleValues_Colors: ExampleGroupableOption[] = <ExampleGroupableO
 
 export const ExampleGroups_Colors: ExampleGroup[] = <ExampleGroup[]> [
 	{
-		id: 'colors',
-		data: 'The colors'
+		group: 'colors',
+		label: 'The colors'
 	}, {
-		id: 'animals',
-		data: 'The Animals'
+		group: 'animals',
+		label: 'The Animals'
 	}
 ];

@@ -12,12 +12,15 @@ export class MultiSelectExampleComponent implements OnInit {
 	options: ExampleSelectizeOption[] = ExampleValues_Frameworks.slice(0);
 	config: any = MULTI_SELECT_CONFIG;
 	placeholder = 'Placeholder...';
-	value: string[];
+	value: string[] = [];
 
 	constructor() {
 	}
 
 	ngOnInit(): void {
+		// for (let i = 0; i < 10; i++) {
+		// 	this.addRandomOption();
+		// }
 	}
 
 	addRandomOption() {

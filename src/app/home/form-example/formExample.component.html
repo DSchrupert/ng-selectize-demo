@@ -26,6 +26,7 @@
 			<div class="required field">
 				<label>Required Dropdown:</label>
 				<ng-selectize [errorClass]="'has-error'" [formControl]="formGroupExample.get('requiredDropdownExample')" [config]="requiredDropdownConfig" [options]="requiredDropdownOptions" [hasOptionsPlaceholder]="'Click to select...'"></ng-selectize>
+				<!--<ng-selectize [errorClass]="'has-error'" [formControl]="formGroupExample.get('requiredDropdownExample')" [config]="requiredDropdownConfig" [options]="requiredDropdownOptions" [hasOptionsPlaceholder]="'Click to select...'"></ng-selectize>-->
 				<div class="ui basic red pointing prompt label" style="margin-top: 5px;"
 					 *ngIf="formGroupExample.get('requiredDropdownExample').touched && formGroupExample.get('requiredDropdownExample').errors">
 					<span *ngIf="formGroupExample.get('requiredDropdownExample').hasError('doesntStartWithR')">- Dropdown value must start with R.<br /></span>
