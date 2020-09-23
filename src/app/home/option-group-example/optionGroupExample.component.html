@@ -2,7 +2,7 @@
 	<h3>Option Groups: </h3>
 
 	<ng-selectize [config]="config" [optgroups]="optgroups" [options]="options" [placeholder]="placeholder" [(ngModel)]="value"
-				   (ngModelChange)="onValueChange($event)" ngDefaultControl></ng-selectize>
+				ngDefaultControl></ng-selectize>
 	<div class="form-inline">
 		<!--<add-option (addedOption)="addMultiSelectDynamicAddOption($event)" [fieldId]="'addMultiSelectDynamicOption'"></add-option>-->
 		<pre>Current value: {{value | json}}</pre>

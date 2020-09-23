@@ -8,6 +8,7 @@ import {
 	Component,
 	ViewChild,
 	Output,
+	Renderer2,
 	EventEmitter, IterableDiffers, IterableDiffer, IterableChangeRecord, IterableChanges
 } from '@angular/core';
 import {
@@ -37,6 +38,7 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	private _optgroups: any[];
 	private _optgroups_differ: IterableDiffer<any>;
 
+	@Input() id: string;
 	@Input() placeholder: string;
 	@Input() hasOptionsPlaceholder: string;
 	@Input() noOptionsPlaceholder: string;
@@ -55,10 +57,15 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	private onTouchedCallback: () => {};
 	private onChangeCallback: (_: any) => {};
 
-	constructor(private _differs: IterableDiffers) {
+	constructor(private _differs: IterableDiffers, private renderer: Renderer2) {
 	}
 
-	ngOnInit(): void {
+	ngOnInit(): void {}
+
+	ngAfterViewInit():void {
+		if (this.id && this.id.length > 0) {
+			this.renderer.setAttribute(this.selectizeInput.nativeElement, 'id', this.id);
+		}
 		this.reset();
 	}
 
@@ -92,16 +99,18 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	 * FIXME -> Implement deep check to only compare against label and value fields.
 	 */
 	ngDoCheck(): void {
-		if (this._options_differ) {
-			const changes = this._options_differ.diff(this._options);
-			if (changes) {
-				this._applyOptionsChanges(changes);
+		if (this.selectize) {
+			if (this._options_differ) {
+				const changes = this._options_differ.diff(this._options);
+				if (changes) {
+					this._applyOptionsChanges(changes);
+				}
 			}
-		}
-		if (this._optgroups_differ) {
-			const changes = this._optgroups_differ.diff(this._optgroups);
-			if (changes) {
-				this._applyOptionGroupChanges(changes);
+			if (this._optgroups_differ) {
+				const changes = this._optgroups_differ.diff(this._optgroups);
+				if (changes) {
+					this._applyOptionGroupChanges(changes);
+				}
 			}
 		}
 	}
@@ -148,11 +157,11 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	 * Refresh selected values when options change.
 	 */
 	onSelectizeOptionAdd(option: any): void {
-		this.selectize.addOption(cloneDeep(option));
+		this.selectize?.addOption(cloneDeep(option));
 		const valueField = this.getValueField();
 		if (this.value) {
-			const items = typeof this.value === 'string' ? [this.value] : this.value;
-			if (items.find(value => value === option[valueField])) {
+			const items = (typeof this.value === 'string' || typeof this.value === 'number') ? [this.value] : this.value;
+			if (items && items instanceof Array && items.find(value => value === option[valueField])) {
 				this.selectize.addItem(option[valueField], true);
 			}
 		}
@@ -234,7 +243,7 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 		if (obj !== this.value) {
 			this.value = obj;
 		}
-		this.selectize.setValue(this.value);
+		this.selectize?.setValue(this.value);
 	}
 
 	/**

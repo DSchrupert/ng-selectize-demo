@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {CURRENT_OPTIONS_CONFIG} from './create-values-example.config';
 
 @Component({
-	moduleId: module.id,
 	selector: 'create-values-example',
 	templateUrl: 'create-values-example.component.html'
 })

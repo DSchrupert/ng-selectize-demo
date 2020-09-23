@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
@@ -36,7 +36,7 @@ import {OptionGroupExampleComponent} from './home/option-group-example/optionGro
 		BrowserModule,
 		FormsModule,
 		ReactiveFormsModule,
-		HttpModule,
+		HttpClientModule,
 		RouterModule.forRoot([
 			{path: 'wip', component: OptionGroupExampleComponent}, // just for tracing into NgSelectize, i want it to be the only thing on the page.
 			{path: '', component: HomeComponent}
