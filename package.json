@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~10.1.1",
     "@angular/platform-browser-dynamic": "~10.1.1",
     "@angular/router": "~10.1.1",
-    "jquery": "^3.1.1",
+    "jquery": "^3.5.0",
     "rxjs": "~6.6.0",
     "selectize": "^0.12.4",
     "semantic-ui-css": "^2.2.12",
